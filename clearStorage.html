@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <script >
+    window.onload = function () {
+      var clearButton = document.querySelector('.clear_button');
+      clearButton.onclick = clearStorage;
+    }
+
+    function clearStorage() {
+      localStorage.clear();
+    }
+  </script>
+</head>
+<body>
+<form>
+  <input type="button" class="clear_button" value="Очистка хранилищя">
+</form>
+</body>
+</html>
